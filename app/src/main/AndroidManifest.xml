@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="linkedgeo.linkedgeo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MedyaSecimEkrani">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--Not
+            oluşturulan her activity androidManifest içersinde tanımlanmalıdır
+        -->
+        <!--instagram activitysi tanımlanmasının yapıldıgı yer-->
+        <activity
+            android:name=".Instagram.insta_Login"
+            android:label="insta_Login">
+        </activity>
+
+        <!--facebook activitysi tanımlamasının yapıldıgı yer-->
+        <activity
+            android:name=".Facebook.face_Login"
+            android:label="face_Login">
+        </activity>
+        <!--local activitysinin tanımlamasının yapıldıgı yer-->
+        <activity
+            android:name=".Local.localGeo"
+            android:label="localGeo">
+        </activity>
+
+    </application>
+
+</manifest>
